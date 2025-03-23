@@ -1,6 +1,6 @@
 
 kind: Deployment
-apiVersion: webs/v1
+apiVersion: api/v1
 metadata:
   name: frontend
   namespace: expense
