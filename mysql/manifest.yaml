@@ -25,3 +25,18 @@ spec:
       containers:
       - name: mysql
         image: anjaneyareddym/mysql:v2
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: mysql
+spec:
+  selector:
+      app: mysql
+      tier: db
+      project: expense
+  ports:
+  - name: mysql-svc-port
+    protocol: TCP
+    port: 80 # service port
+    targetPort: 80 # container port          
