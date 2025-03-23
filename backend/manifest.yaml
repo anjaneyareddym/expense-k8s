@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: anjaneyareddym/backend:v2 
+        image: joindevops/backend:v1 
         envFrom:
         - configMapRef:
             name: backend    
