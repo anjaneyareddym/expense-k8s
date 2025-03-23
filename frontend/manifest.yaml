@@ -1,6 +1,6 @@
 
 kind: Deployment
-webVersion: webs/v1
+apiVersion: webs/v1
 metadata:
   name: frontend
   namespace: expense
@@ -28,7 +28,7 @@ spec:
         image: anjaneyareddym/frontend:v2   
 ---
 kind: Service
-webVersion: v1
+apiVersion: v1
 metadata:
   name: frontend
   namespace: expense
