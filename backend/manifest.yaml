@@ -50,8 +50,8 @@ spec:
   ports:
   - name: backend-svc-port
     protocol: TCP
-    port: 80 # service port
-    targetPort: 80 # container port           
+    port: 8080 # service port
+    targetPort: 8080 # container port           
 
 
       
