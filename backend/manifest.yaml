@@ -35,7 +35,7 @@ spec:
         image: anjaneyareddym/backend:v2 
         envFrom:
         - configMapRef:
-            name: myconfigmap    
+            name: backend    
 ---
 kind: Service
 apiVersion: v1
